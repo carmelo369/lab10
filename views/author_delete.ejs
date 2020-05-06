@@ -1,0 +1,25 @@
+<%- include ('templates/header'); -%>
+
+<div class='container'>
+	<div class='jumbotron'>
+		<h3>Are you sure?</h3>
+	</div>
+	
+	
+	<form action='/author/<%=author.authorId%>/delete' method='GET'>
+	    <div class='form-group row'>
+	        Are you sure you want to delete the author <%=author.firstName%> <%=author.lastName %>? This cannot be undone
+        </div>
+		<div class='form-group row'>
+			<div class='col-sm-4'>
+			    <a class='btn btn-danger' href='/'>No, Cancel</a>
+			</div>
+			<div class='col-sm-4'>
+				<button class='btn btn-primary' href='/home'>Yes, DELETE</button>
+			</div>
+			<div class='col-sm-4'></div>
+		</div>
+	</form>
+
+	
+</div>

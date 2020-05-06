@@ -16,7 +16,8 @@
         		<%authors.forEach(function(author){%>
             		<tr>
             			<td><%=author.firstName%> <%=author.lastName%></td>
-            			<td><a href='/author/<%=author.authorId%>'>Info</a> | <a href='/author/<%=author.authorId%>/edit'>Edit</a> | <a href='/author/<%=author.authorId%>/delete'>Delete</a> </td></tr>
+            			<td><a href='/author/<%=author.authorId%>'>Info</a> | <a href='/author/<%=author.authorId%>/edit'>Edit</a> | <a href='/author/<%=author.authorId%>/authordel'>Delete</a>
+            			<!--| <a href='/authordel'>DELPAGE</a></a></td></tr>-->
         		<%});%>
         	</table>
         <%}%>
